@@ -1,4 +1,4 @@
-# fulcon
+# fulcon [![NPM Module](https://img.shields.io/npm/v/fulcon.svg?style=flat)](https://www.npmjs.com/package/fulcon)
 
 Clones a function (creates wrapper function), with the same signature as source function
 
