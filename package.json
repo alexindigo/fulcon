@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rimraf coverage",
     "lint": "eslint *.js",
-    "test": "istanbul cover --reporter=json tape -- test.js | tap-spec",
-    "debug": "tape test.js | tap-spec",
+    "cover": "istanbul cover --reporter=json tape -- test.js | tap-spec",
+    "test": "tape test.js | tap-spec",
     "browser": "browserify -t browserify-istanbul test.js | obake --coverage | tap-spec",
     "report": "istanbul report lcov",
     "size": "browserify index.js | size-table fulcon",
@@ -16,11 +16,10 @@
   "pre-commit": [
     "clean",
     "lint",
-    "test",
+    "cover",
     "browser",
     "report",
-    "size",
-    "files"
+    "size"
   ],
   "engines": {
     "node": ">= 0.10"
