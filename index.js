@@ -10,5 +10,6 @@ module.exports = fulcon;
 function fulcon(source)
 {
   // makes "clone" look and smell the same
-  return Function('source', 'return function ' + source.name + '(' + Array(source.length + 1).join('a').split('').join(',') + '){ return source.apply(this, arguments); }')(source);
+  // strip `bound ` prefix from the function name
+  return Function('source', 'return function ' + source.name.replace(/^bound /, '') + '(' + Array(source.length + 1).join('a').split('').join(',') + '){ return source.apply(this, arguments); }')(source);
 }

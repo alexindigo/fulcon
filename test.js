@@ -89,7 +89,7 @@ tape.test('executes original function within bound context', function(t)
 {
   t.plan(5);
 
-  var original = function(a, b) { return this.blah + a + b; }.bind({blah: 5})
+  var original = function prebindFunc(a, b) { return this.blah + a + b; }.bind({blah: 5})
     , cloned   = fulcon(original)
     , context  = {blah: 42}
     ;
