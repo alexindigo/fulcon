@@ -10,11 +10,11 @@ Clones a function (creates wrapper function), with the same signature as source 
 [![Dependency Status](https://img.shields.io/david/alexindigo/fulcon.svg?style=flat)](https://david-dm.org/alexindigo/fulcon)
 [![bitHound Overall Score](https://www.bithound.io/github/alexindigo/fulcon/badges/score.svg)](https://www.bithound.io/github/alexindigo/fulcon)
 
-| compression      |  size |
-| :--------------- | ----: |
-| fulcon.js        | 945 B |
-| fulcon.min.js    | 651 B |
-| fulcon.min.js.gz | 373 B |
+| compression      |    size |
+| :--------------- | ------: |
+| fulcon.js        | 1.02 kB |
+| fulcon.min.js    |   673 B |
+| fulcon.min.js.gz |   396 B |
 
 
 ## Install
