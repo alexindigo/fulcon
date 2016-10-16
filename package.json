@@ -1,6 +1,6 @@
 {
   "name": "fulcon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Clones a function (creates wrapper function), with the same signature as source function",
   "main": "index.js",
   "scripts": {
