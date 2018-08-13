@@ -6,14 +6,19 @@
   "scripts": {
     "clean": "rimraf coverage",
     "lint": "eslint *.js",
-    "ci-lint": "is-node-modern && npm run lint || is-node-not-modern",
     "cover": "istanbul cover --reporter=json tape -- test.js | tap-spec",
     "test": "tape test.js | tap-spec",
     "browser": "browserify -t browserify-istanbul test.js | obake --coverage | tap-spec",
-    "report": "istanbul report lcov",
+    "report": "istanbul report lcov text",
     "size": "browserify index.js | size-table fulcon",
-    "files": "pkgfiles --sort=name"
+    "testall": "npm run cover && npm run browser && npm run report"
   },
+  "files": [
+    "index.js",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "pre-commit": [
     "clean",
     "lint",
@@ -23,7 +28,7 @@
     "size"
   ],
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 6"
   },
   "repository": {
     "type": "git",
@@ -52,7 +57,6 @@
     "istanbul": "^0.4.5",
     "obake": "^0.1.2",
     "phantomjs-prebuilt": "^2.1.13",
-    "pkgfiles": "^2.3.0",
     "pre-commit": "^1.1.3",
     "rimraf": "^2.5.4",
     "size-table": "^0.2.0",
