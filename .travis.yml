@@ -18,7 +18,7 @@ script:
   - node --version
   - npm --version
   - npm run lint
-  - npm run cover
+  - npm run test
   - npm run browser
   - npm run report
 after_success:
