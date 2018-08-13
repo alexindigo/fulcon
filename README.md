@@ -3,18 +3,19 @@
 Clones a function (creates wrapper function), with the same signature as source function
 
 [![PhantomJS Build](https://img.shields.io/travis/alexindigo/fulcon/master.svg?label=browser&style=flat)](https://travis-ci.org/alexindigo/fulcon)
-[![Linux Build](https://img.shields.io/travis/alexindigo/fulcon/master.svg?label=linux:0.10-6.x&style=flat)](https://travis-ci.org/alexindigo/fulcon)
-[![Windows Build](https://img.shields.io/appveyor/ci/alexindigo/fulcon/master.svg?label=windows:0.10-6.x&style=flat)](https://ci.appveyor.com/project/alexindigo/fulcon)
+[![Linux Build](https://img.shields.io/travis/alexindigo/fulcon/master.svg?label=linux:6.x-10.x&style=flat)](https://travis-ci.org/alexindigo/fulcon)
+[![MacOS Build](https://img.shields.io/travis/alexindigo/fulcon/master.svg?label=macos:6.x-10.x&style=flat)](https://travis-ci.org/alexindigo/fulcon)
+[![Windows Build](https://img.shields.io/appveyor/ci/alexindigo/fulcon/master.svg?label=windows:6.x-10.x&style=flat)](https://ci.appveyor.com/project/alexindigo/fulcon)
 
 [![Coverage Status](https://img.shields.io/coveralls/alexindigo/fulcon/master.svg?label=code+coverage&style=flat)](https://coveralls.io/github/alexindigo/fulcon?branch=master)
 [![Dependency Status](https://img.shields.io/david/alexindigo/fulcon.svg?style=flat)](https://david-dm.org/alexindigo/fulcon)
-[![bitHound Overall Score](https://www.bithound.io/github/alexindigo/fulcon/badges/score.svg)](https://www.bithound.io/github/alexindigo/fulcon)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://opensource.org/licenses/MIT)
 
 | compression      |    size |
 | :--------------- | ------: |
-| fulcon.js        | 1.02 kB |
-| fulcon.min.js    |   673 B |
-| fulcon.min.js.gz |   396 B |
+| fulcon.js        | 1.03 kB |
+| fulcon.min.js    |   686 B |
+| fulcon.min.js.gz |   386 B |
 
 
 ## Install

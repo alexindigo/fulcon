@@ -1,17 +1,24 @@
 sudo: false
 language: node_js
+
 node_js:
-  - "0.10"
-  - "0.12"
-  - "iojs"
-  - "4"
-  - "5"
-  - "stable"
+  - "6"
+  - "8"
+  - "10"
+
+os:
+  - osx
+  - linux
+
+install:
+  - travis_retry yarn install
+
 script:
+  - uname -a
   - node --version
   - npm --version
-  - npm run ci-lint
-  - npm run cover
+  - npm run lint
+  - npm run test
   - npm run browser
   - npm run report
 after_success:
